@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav_Bar from './Components/Nav_Bar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Components/Home';
+import Search from './Components/Search';
+import Profile from './Components/Profile';
+import Login from './Components/Login';
+import { useSelector } from 'react-redux';
+import Myprofile from './Components/Myprofile';
 
 function App() {
+  const Data = useSelector(state => state)
+  console.log(Data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App h-screen">
+      {
+        Data.user  ? 
+        <>
+        <Nav_Bar/>
+        <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/search' element={<Search/>} />
+        <Route path='/profile/:id' element={<Profile/>} />
+        <Route path='/profile' element={<Myprofile/>} />
+       </Routes>
+        </>
+         :(<Login/>) 
+      }
+     {/* <Nav_Bar/> */}
+     
     </div>
   );
 }
