@@ -3,7 +3,7 @@
 This is a Github exploration app that allows users to log in, view user profiles, and search for Github users. It is built using React, React Router, Redux, and Tailwind CSS.
 
 ## Note
-enter github username only 
+enter github usernames only 
 - username: username
 - password: username
 ### example
