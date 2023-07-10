@@ -4,11 +4,11 @@ This is a Github exploration app that allows users to log in, view user profiles
 
 ## Note
 enter github username only 
-username: username
-password: username
-- example
+- username: username
+-password: username
+### example
 - username: subramaneshwar
--password: subramaneshwar
+- password: subramaneshwar
 
 
 ## Technologies Used
