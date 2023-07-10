@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Github Exploration App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Github exploration app that allows users to log in, view user profiles, and search for Github users. It is built using React, React Router, Redux, and Tailwind CSS.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- React: A JavaScript library for building user interfaces.
+- React Router: A routing library for React that enables navigation and routing in the application.
+- Redux: A predictable state container for managing the application's global state.
+- Tailwind CSS: A utility-first CSS framework for building responsive user interfaces.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Login Page**: Users can enter their email, password, Github username, and password to log in. User data is fetched from the Github API and stored in the Redux store upon successful login.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Home Page**: After logging in, users are redirected to the home page. Data from the Github public API (https://api.github.com/users) is fetched and displayed in tile form. Clicking on a tile redirects to the user details page.
 
-### `npm test`
+- **User Details Page**: Users can view detailed information about a specific Github user by fetching their data from the Github public API (https://api.github.com/users/<username>). The top five repositories of the user are also listed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Profile Details Page**: Users can view their own profile details by fetching their data from the Github public API (https://api.github.com/users/<username>). The top five repositories of the user are also listed. A heading is displayed as "My GitHub Profile" for the logged-in user.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: `git clone https://github.com/your-username/github-exploration-app.git`
+2. Navigate to the project directory: `cd github-exploration-app`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open the app in your browser: `http://localhost:3000`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Navigate to the login page and enter your email, password, Github username, and password to log in.
+- After successful login, you will be redirected to the home page where you can view Github user data in tile form.
+- Use the search bar in the navigation bar to search for specific Github usernames and view their details.
+- Click on a tile on the home page or search results page to view detailed information about a user, including their repositories.
+- If you click on the "Your Profile" button, it will redirect you to the details page of your own Github profile.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
