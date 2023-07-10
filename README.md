@@ -2,6 +2,15 @@
 
 This is a Github exploration app that allows users to log in, view user profiles, and search for Github users. It is built using React, React Router, Redux, and Tailwind CSS.
 
+## Note
+enter github username only 
+username: username
+password: username
+- example
+- username: subramaneshwar
+-password: subramaneshwar
+
+
 ## Technologies Used
 
 - React: A JavaScript library for building user interfaces.
@@ -11,7 +20,7 @@ This is a Github exploration app that allows users to log in, view user profiles
 
 ## Features
 
-- **Login Page**: Users can enter their email, password, Github username, and password to log in. User data is fetched from the Github API and stored in the Redux store upon successful login.
+- **Login Page**: Users can enter their  Github username, and password to log in. User data is fetched from the Github API and stored in the Redux store upon successful login.
 
 - **Home Page**: After logging in, users are redirected to the home page. Data from the Github public API (https://api.github.com/users) is fetched and displayed in tile form. Clicking on a tile redirects to the user details page.
 
